@@ -2,6 +2,12 @@
 UTF-8 encoding for ValidationMessages.properties.
 Based on http://stackoverflow.com/questions/6421790/hibernate-validator-jsf-2-0-validationmessages-properties-in-utf-8 e http://stackoverflow.com/questions/3645491/i18n-with-utf-8-encoded-properties-files-in-jsf-2-0-appliaction.
 
+Need to add in your validation.xml:
+
+```xml
+<message-interpolator>br.eti.clairton.validation.UTF8ResourceBundleMessageInterpolator</message-interpolator>
+```
+
 Add dependency:
 ```xml
 <dependeny>
