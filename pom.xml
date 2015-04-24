@@ -31,8 +31,6 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
-
 	<build>
 		<plugins>
 			<plugin>
@@ -46,5 +44,30 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<extensions>
+			<extension>
+				<groupId>ar.com.synergian</groupId>
+				<artifactId>wagon-git</artifactId>
+				<version>0.2.5</version>
+			</extension>
+		</extensions>
 	</build>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>synergian-repo</id>
+			<url>https://raw.github.com/synergian/wagon-git/releases</url>
+		</pluginRepository>
+	</pluginRepositories>
+	<distributionManagement>
+		<repository>
+			<id>mvn-repo-releases</id>
+			<name>Release Repo</name>
+			<url>git:releases://git@github.com:clairton/mvn-repo.git</url>
+		</repository>
+		<snapshotRepository>
+			<id>mvn-repo-snapshots</id>
+			<name>Snapshot Repo</name>
+			<url>git:snapshots://git@github.com:clairton/mvn-repo.git</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>
