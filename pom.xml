@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br.eti.clairton</groupId>
 	<artifactId>hibernate-validator-utf8</artifactId>
-	<version>0.1.0</version>
+	<version>0.1.1-SNAPSHOT</version>
 	
 	<scm>
 	  <connection>scm:git:git@github.com:clairton/hibernate-validator-utf8.git</connection>
